@@ -40,7 +40,7 @@ function SearchModal({}: Props) {
 
   const Map = useMemo(
     () =>
-      dynamic(() => import("../1-Map"), {
+      dynamic(() => import("../Map"), {
         ssr: false,
       }),
     [location]
