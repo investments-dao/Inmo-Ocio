@@ -49,7 +49,7 @@ function Search({}: Props) {
     }
 
     return "Personas";
-  }, [guestCount]);
+  }, []);
 
   return (
     <div

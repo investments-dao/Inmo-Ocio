@@ -6,7 +6,7 @@ import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useCallback, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
-import { AiFillFacebook } from "react-icons/ai";
+import { AiFillFacebook, AiFillTwitterCircle, AiFillGithub } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
 import { toast } from "react-toastify";
 
@@ -87,15 +87,29 @@ function LoginModal({}: Props) {
       <hr />
       <Button
         outline
-        label="Continue with Google"
+        label="Continua con Google"
         icon={FcGoogle}
         onClick={() => signIn("google")}
       />
       <Button
         outline
-        label="Continue with Facebook"
+        label="Continua con Twitter"
+        icon={AiFillTwitterCircle}
+        onClick={() => signIn("twitter")}
+        isColor
+      />
+      <Button
+        outline
+        label="Continua con Facebook"
         icon={AiFillFacebook}
         onClick={() => signIn("facebook")}
+        isColor
+      />
+       <Button
+        outline
+        label="Continua con GitHub"
+        icon={AiFillGithub}
+        onClick={() => signIn("github")}
         isColor
       />
       <div className="text-neutral-500 text-center mt-4 font-light">
