@@ -43,7 +43,7 @@ function SearchModal({}: Props) {
       dynamic(() => import("../Map"), {
         ssr: false,
       }),
-    [location]
+    []
   );
 
   const onBack = () => {
