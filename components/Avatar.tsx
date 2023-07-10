@@ -16,14 +16,14 @@ function Avatar({ src, userName }: Props) {
           className="rounded-full"
           height="30"
           width="30"
-          alt="hasImag"
+          alt=""
           src={src}
         />
       ) : userName ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
           className="rounded-full h-[30px] w-[30px]"
-          alt="nameImage"
+          alt=""
           src={`https://ui-avatars.com/api/?name=${userName}`}
         />
       ) : (
@@ -31,7 +31,7 @@ function Avatar({ src, userName }: Props) {
           className="rounded-full"
           height="30"
           width="30"
-          alt="noUser"
+          alt=""
           src="/assets/avatar.png"
         />
       )}
