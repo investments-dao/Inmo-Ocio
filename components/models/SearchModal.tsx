@@ -50,6 +50,7 @@ function SearchModal({}: Props) {
     setStep((value) => value - 1);
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const onNext = () => {
     setStep((value) => value + 1);
   };
