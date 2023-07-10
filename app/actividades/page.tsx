@@ -6,7 +6,7 @@ import ActividadesClient from "./ActividadesClient";
 
 type Props = {};
 
-const PropertiesPage = async (props: Props) => {
+const ActividadesPage = async (props: Props) => {
   const currentUser = await getCurrentUser();
 
   if (!currentUser) {
