@@ -14,7 +14,7 @@ import getCurrentUser from "./actions/getCurrentUser";
 export const metadata = {
   title: "Inmo-Ocio",
   description: "Inmuebles y Actividades",
-  icons: "https://www.seekpng.com/png/full/957-9571167_airbnb-png.png",
+  icons: "/favicon.ico",
 };
 
 const font = Nunito({
