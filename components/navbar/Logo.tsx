@@ -13,9 +13,9 @@ function Logo({}: Props) {
     <div onClick={() => router.push("/")}>
       <Image
         alt="logo"
-        className="hidden md:block cursor-pointer"
+        className="rounded-lg hidden md:block cursor-pointer"
         height="100"
-        width="100"
+        width="200"
         src="/assets/logo.png"
       />
     </div>
