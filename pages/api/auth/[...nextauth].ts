@@ -1,14 +1,15 @@
 import prisma from "@/lib/prismadb";
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
 import bcrypt from "bcrypt";
-import NextAuth, { AuthOptions } from "next-auth";
+import NextAuth from 'next-auth'
+import type { NextAuthOptions } from 'next-auth'
 import CredentialsProvider from "next-auth/providers/credentials";
 import FacebookProvider from "next-auth/providers/facebook";
 import GoogleProvider from "next-auth/providers/google";
 import TwitterProvider from "next-auth/providers/twitter";
 import GitHubProvider from "next-auth/providers/github";
 
-export const authOptions: AuthOptions = {
+export const authOptions: NextAuthOptions = {
   adapter: PrismaAdapter(prisma),
   providers: [
     GitHubProvider({
@@ -63,7 +64,7 @@ export const authOptions: AuthOptions = {
   pages: {
     signIn: "/",
   },
-  debug: process.env.NODE_ENV === "development",
+  debug: process.env.NODE_ENV === "production",
   session: {
     strategy: "jwt",
   },
