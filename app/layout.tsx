@@ -78,7 +78,7 @@ export default async function RootLayout({
     <html lang="es">
       <body className={font.className}>
       <link rel="icon" href="/icon.ico" sizes="any" />
-      <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" sizes="140" />
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="140" />
           <ClientOnly>
           <ToastContainerBar />
           <SearchModal />
