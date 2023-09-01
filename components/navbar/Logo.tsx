@@ -15,7 +15,7 @@ function Logo({}: Props) {
         alt="logo"
         className="rounded-lg hidden md:block cursor-pointer"
         height="100"
-        width="200"
+        width="150"
         src="/logo.png"
       />
     </div>
